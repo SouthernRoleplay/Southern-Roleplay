@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="generals.css">
+    <link rel="icon" href="logo.jpg">
+    <title>Discord Rules</title>
+</head>
+<body>
+    <nav class="fixed w-full bg-transparent flex shadow-xl justify-between items-center h-24 px-10 md:px-28 ">
+        <div class="md:p-5">
+            <img src="logo.jpg" class="md:w-24 w-16 flex items-center justify-center">
+        </div>
+        
+        <div class="hidden md:flex items-center space-x-1">
+            <a href="index.html"
+               class="py-4 px-2  font-bold  hover:border-b-4 hover:border-yellow-500 hover:text-yellow-500 transition duration-300">
+                 Home
+            </a>
+           <a href="#ABOUT"
+             class="py-4 px-2  font-bold  hover:border-b-4 hover:border-yellow-500 hover:text-yellow-500 transition duration-300">
+             AboutUs
+           </a>
+            <a href="#RULES"
+               class="py-4 px-2  font-bold  hover:border-b-4 hover:border-yellow-500 hover:text-yellow-500 transition duration-300">
+               Rules
+             </a>
+             <a href="https://forms.gle/L9ZuDafGsfn4Eo6RA"
+               class="py-4 px-2  font-bold  hover:border-b-4 hover:border-yellow-500 hover:text-yellow-500 transition duration-300">
+               Apply
+              </a>
+           </div>
+           <div class="md:hidden flex items-center">
+            <button class="outline-none menu-button">
+                <svg class="w-6 h-6 "
+                 x-show="! showMenu"
+                 fill="none"
+                 stroke-linecap="round"
+                 stroke-linejoin="round"
+                 stroke-width="2"
+                 viewBox="0 00 24 24"
+                 stroke="currentColor"><path d="m4 6h16M4 12h16M4 18h16"><path></svg>
+            </button>
+        </div>
+       
+        
+    </nav>
+    <div class="hidden pt-10 bg-transparent mobile-menu">
+        <ul class="p-10 flex flex-col text-xl font-bold items-center justify-center w-screen">
+          <li class=" p-4 w-44 flex items-center justify-center  hover:border-b-4 hover:border-yellow-500">
+            <a href="/index.html" class="block  "
+              >Home
+            </a>
+          </li>
+          <li class="p-4 w-44 flex items-center justify-center hover:border-b-4 hover:border-yellow-500">
+            <a
+              href="#ABOUT"
+              class="block.text-sm.px-2.py-4 hover:border-b-4 hover:border-yellow-500  transition duration-300"
+            >
+              Services
+            </a>
+          </li>
+          <li class="p-4 w-44 flex items-center justify-center hover:border-b-4 hover:border-yellow-500"> 
+            <a href="#RULES" class="block.text-sm.px-2.py-4 hover:border-b-4 hover:border-yellow-500  transition duration-300">
+              Rules
+            </a>
+          </li>
+          <li class="p-4 w-44 flex items-center justify-center hover:border-b-4 hover:border-yellow-500">
+            <a
+              href="https://forms.gle/L9ZuDafGsfn4Eo6RA"
+              class="block.text-sm.px-2.py-4  transition duration-300"
+            >
+              Apply
+            </a>
+          </li>
+        </ul>
+      </div>
+    <script>
+        const btn = document.querySelector('button.menu-button');
+        const menu = document.querySelector('.mobile-menu');
+        btn.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+        });
+      </script>
+    <div class="items-center justify-center flex flex-col pt-28 p-10 gap-4">
+        <div class="border border-black bg-white shadow-2xl  rounded-xl  p-10  md:w-2/4">
+            <h1 class="font-bold">DISCORD RULES</h1>
+            <ul class="list-disc">
+                <li>Don't exploit bugs.</li>
+                <li> Don't post anyone's personal information without permission.</li>
+                <li> Any form of discrimation,racism or sexism is punishable and result in ban.</li>
+                <li>Any threats made to the community or a person will be taken very seriously. 
+                </li>
+                <li>  Post content in the current channel.</li>
+                <li> Don't  spam messages in chat's</li>
+                <li>Never mention a MLA'S or MINISTER'S member without a valid reason</li>
+                <li> Disrespecting of anyone will result in a permanent ban.</li>
+                <li> No sexually explicit. </li>
+                </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <link rel="icon" href="logo.jpg">
+    <link rel="stylesheet" href="gang.css">
+    <title>Gang Rules</title>
+</head>
+<body>
+    <nav class="fixed w-full bg-transparent flex shadow-xl justify-between items-center h-24 px-10 md:px-28 ">
+        <div class="md:p-5">
+            <img src="logo.jpg" class="md:w-24 w-16 flex items-center justify-center">
+        </div>
+        
+        <div class="hidden md:flex items-center space-x-1">
+            <a href="index.html"
+               class="py-4 px-2  font-bold  hover:border-b-4 hover:border-yellow-500 hover:text-yellow-500 transition duration-300">
+                 Home
+            </a>
+           <a href="#ABOUT"
+             class="py-4 px-2  font-bold  hover:border-b-4 hover:border-yellow-500 hover:text-yellow-500 transition duration-300">
+             AboutUs
+           </a>
+            <a href="#RULES"
+               class="py-4 px-2  font-bold  hover:border-b-4 hover:border-yellow-500 hover:text-yellow-500 transition duration-300">
+               Rules
+             </a>
+             <a href="https://forms.gle/L9ZuDafGsfn4Eo6RA"
+               class="py-4 px-2  font-bold  hover:border-b-4 hover:border-yellow-500 hover:text-yellow-500 transition duration-300">
+               Apply
+              </a>
+           </div>
+           <div class="md:hidden flex items-center">
+            <button class="outline-none menu-button">
+                <svg class="w-6 h-6 "
+                 x-show="! showMenu"
+                 fill="none"
+                 stroke-linecap="round"
+                 stroke-linejoin="round"
+                 stroke-width="2"
+                 viewBox="0 00 24 24"
+                 stroke="currentColor"><path d="m4 6h16M4 12h16M4 18h16"><path></svg>
+            </button>
+        </div>
+       
+        
+    </nav>
+    <div class="hidden pt-10 bg-transparent mobile-menu">
+        <ul class="p-10 flex flex-col text-xl font-bold items-center justify-center w-screen">
+          <li class=" p-4 w-44 flex items-center justify-center  hover:border-b-4 hover:border-yellow-500">
+            <a href="/index.html" class="block  "
+              >Home
+            </a>
+          </li>
+          <li class="p-4 w-44 flex items-center justify-center hover:border-b-4 hover:border-yellow-500">
+            <a
+              href="#ABOUT"
+              class="block.text-sm.px-2.py-4 hover:border-b-4 hover:border-yellow-500  transition duration-300"
+            >
+              Services
+            </a>
+          </li>
+          <li class="p-4 w-44 flex items-center justify-center hover:border-b-4 hover:border-yellow-500"> 
+            <a href="#RULES" class="block.text-sm.px-2.py-4 hover:border-b-4 hover:border-yellow-500  transition duration-300">
+              Rules
+            </a>
+          </li>
+          <li class="p-4 w-44 flex items-center justify-center hover:border-b-4 hover:border-yellow-500">
+            <a
+              href="https://forms.gle/L9ZuDafGsfn4Eo6RA"
+              class="block.text-sm.px-2.py-4  transition duration-300"
+            >
+              Apply
+            </a>
+          </li>
+        </ul>
+      </div>
+    <script>
+        const btn = document.querySelector('button.menu-button');
+        const menu = document.querySelector('.mobile-menu');
+        btn.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+        });
+      </script>
+    <div class="items-center justify-center flex flex-col pt-28 p-10 gap-4">
+        <div class="border border-black bg-white shadow-2xl  rounded-xl  p-10  md:w-2/4">
+            <h1 class="font-bold">GANG RULES</h1>
+            <ul class="list-disc">
+                <li> Avoid Toxicity in gang RP.</li>
+                <li> You should give proper respect to opposite gang members.</li>
+                <li> Try to adapt yourself to the Gang RP or else don’t participate in Gang RP.</li>
+                <li>Toxic words will be acceptable only in IC perspective.  If the opposite gang people doesn’t like toxic words and they informed, you cannot continue using toxic words. It is your Duty to inform the opposition if you don’t like toxic words.</li>
+                <li>  Personal Life or Personality abuse will not be tolerated.</li>
+                <li> Gang Leader should lead their gang properly. Gang leader is completely responsible for any mistakes made by the gang.  (BOTH IC AND OOC).</li>
+                <li> Gang-leader must have basic RP knowledge. Gang leader will be questioned for any mistakes made by the gang.</li>
+                <li> You should not go into your gang-place after completing a robbery, use hideouts instead.</li>
+                <li> If any gang doesn't respond to opposite gang's takeover request in discord or in IC, the place will automatically goes to requested gang.</li>
+                <li> In your opposition’s gang place , The number of members will not be as equal to Yours (The whole Gang could be there). So it's necessary for a gang to show fear RP in their opponent’s gang place.</li>
+                <li>Don't link your Gang problem issue into Whitelisted Job like Mechanic,Customs and etc.., (Example “Gang A Not Selling Car for Gang B” should not do it.)</li>
+                <li> Alliance is allowed only  when city achived at 5 official gangs. Team is not allowed between gang.</li>
+                <li>You may not advertise your gang through DMs or other public chats</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
